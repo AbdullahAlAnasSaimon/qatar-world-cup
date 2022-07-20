@@ -68,10 +68,16 @@ hr{
 }
 .btn .fa-angle-right{
     margin-right: 6px;
-    transition: 0.6s ease;
+    transition: 0.6s;
+    animation: button 1s ease-in-out 0.2s infinite alternate;
 }
-.btn:hover .fa-angle-right{
-    transform: translate(7px, 0px);
+@keyframes button {
+    0%{
+        transform: translate(2px, 0px);
+    }
+    100%{
+        transform: translate(10px, 0px);
+    }
 }
 .top-banner-img{
     width: 400px;
