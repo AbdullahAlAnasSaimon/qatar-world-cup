@@ -87,6 +87,20 @@ hr{
 .blogs-card{
     display: flex;
 }
+.view-display{
+    display: none;
+}
+.view-more{
+    margin: 40px auto 0px auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 25px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #DD0000;
+}
 .aside-left{
     display: flex;
     flex-direction: column;
