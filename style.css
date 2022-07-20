@@ -13,7 +13,6 @@ body{
 main, footer{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .container{
@@ -237,4 +236,75 @@ hr{
     font-size: 14px;
     color: #ededed;
     text-decoration: none;
+}
+
+/* media query screen styles */
+
+/* small screen (mobile view) */
+@media screen and (max-width: 576px) {
+    /* utilities */
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+    /* banner styles */
+.banner-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.banner-details{
+    width: 80%;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.top-banner-img{
+    width: 100%;
+}
+/* card blog styles */
+.blogs-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aside-left{
+    width: 100%;
+    height: 265px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+.aside-button{
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+.btn-active{
+    color: #fff;
+    font-weight: 600;
+    background-color: #2c4ee0;
+}
+.main-blogs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+}
+.blog-card{
+    width: auto;
+}
+.blog-banner{
+    height: auto;
+}
+.blog-banner-img{
+    width: 100%;
+    height: auto;
+}
+/* footer styles */
+.footer-list-items{
+    flex-direction: column;
+}
+}
+
+/* media query mediam screen (tablet view) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    
 }
